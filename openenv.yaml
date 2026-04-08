@@ -1,0 +1,15 @@
+name: customer-support-env
+description: Multi-step customer support ticket resolution environment
+version: 1.0
+
+entry_point: my_env.env:SupportEnv
+
+observation_space:
+  ticket: string
+
+action_space:
+  category: string
+  priority: string
+  response: string
+
+reward_range: [0.0, 1.0]
