@@ -1,0 +1,16 @@
+[project]
+name = "customer-support-env"
+version = "0.1.0"
+description = "Customer support environment using OpenEnv"
+authors = [
+    { name = "Yash", email = "your@email.com" }
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "openai"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
