@@ -114,6 +114,10 @@ def run():
 
     env.close()
 
+from fastapi import FastAPI
 
-if __name__ == "__main__":
-    run()
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"status": "Customer Support Env Running"}
